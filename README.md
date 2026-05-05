@@ -1,0 +1,1 @@
+Folder for analyzing db final exam up against the curriculum. Useful for finding exercises relevant for different parts of the curriculum, getting solution proposals for exercises, or generating new exercises based on the ususal exam format.
