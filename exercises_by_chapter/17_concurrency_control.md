@@ -59,6 +59,7 @@ r1(X); r2(X); w1(X); r3(Z); r2(Z); w2(Y); c1; c2; w3(Z); c3;
 
 **Maks poeng:** 5
 
+
 ---
 
 ## Exercise 4 — D2019 Problem 20: Tofaselåsing (5 %)
