@@ -10,7 +10,7 @@
 - **Conceptual / true-false:** WAL rule, force vs. no-force, steal vs. no-steal, what's in a checkpoint, why redo starts at oldest recLSN, why undo writes CLRs, why durability needs force-log-at-commit.
 - **"Why do we need recovery?"** open-ended.
 
-**Total exercises:** 25 — sourced from D2018, D2018_K, D2019, D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
+**Total exercises:** 27 — sourced from D2018, D2018_K, D2019, D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 
 ---
 
@@ -585,3 +585,42 @@ Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunkt
 - [ ] C
 
 **Maks poeng:** 8
+
+---
+
+## Exercise 26 — D2024_K Problem 7: ARIES (5 %)
+
+Anta ARIES-recovery og la B, C og D være dataelementer og T1, T2 og T3 være transaksjoner. Loggpostene i loggen under har loggposter på formatet:
+[LSN,Operation,Transaction,DataItem]
+
+```text
+[101,end_ckpt]
+[102,update,T3,B]
+[103,update,T3,C]
+[104,update,T2,B]
+[105,update,T1,D]
+[106, commit, T3]
+[107,update,T2,D]
+[108, commit, T1]
+```
+
+Anta A, B, C, D er datasider det skal gjøres recovery på. DPT som finnes i loggposten med LSN=101 er tom.
+Blokkene (dataelementene) har følgende PageLSN på disken:
+(B,pageLSN=104),
+(C,pageLSN=103),
+(D,pageLSN=105)
+For hver update-loggpost i denne loggen forklar hvorfor (eller hvorfor ikke) det blir gjort redo under recovery.
+
+**Skriv ditt svar her**
+
+**Maks poeng:** 5
+
+---
+
+## Exercise 27 — D2024_K Problem 8: ARIES (5 %)
+
+Forklar hvorfor redo må gjøres før undo når det er krasjrecovery i ARIES. Bruk gjerne eksempelet i forrige oppgave til å forklare.
+
+**Skriv ditt svar her**
+
+**Maks poeng:** 5

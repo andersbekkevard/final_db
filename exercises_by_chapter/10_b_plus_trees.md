@@ -9,7 +9,7 @@
 - Sizing: same setup, compute level-1 block count and total number of levels.
 - Given keys 1…N, classify which leaf-block letter (a–e) each key ends up in.
 
-**Total exercises:** 11 — sourced from D2018, D2018_K, D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
+**Total exercises:** 14 — sourced from D2018, D2018_K, D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 
 ---
 
@@ -223,3 +223,42 @@ Vi har et clustered B+-tre hvor vi setter inn 20200 studentposter av størrelse 
 - [ ] Ingen av de andre alternativene er riktige
 
 **Maks poeng:** 5
+
+---
+
+## Exercise 12 — D2024_K Problem 1: B+-tree (10 %)
+
+Vi har et B+-tre med datablokker av størrelse 4096 byte (4KB). I dette treet setter vi inn fem poster med nøkler i følgende rekkefølge: 123, 97, 128, 45, 27. Hver post har størrelse 1000 byte.
+Vis hele treet med nøklene i riktig sorteringsrekkefølge etter at alle posten er satt inn. Ta med alle pekere som skal være med.
+
+Tegn på ark.
+
+**Skriv ditt svar her**
+
+**Maks poeng:** 10
+
+---
+
+## Exercise 13 — D2024_K Problem 3a: Access paths / query processing (16 % total)
+
+Vi har en tabell med studentposter, **Student (studnr, navn, epost, studieprogram)**, som er 100 byte store. Nøkkelen **studnr** er 4 byte stor. Postene er lagret i et clustered B+-tre med blokker som er 4096 byte store. En BlockId er 8 byte. Tabellen inneholder 40 000 poster.
+I tillegg til dette har vi et unclustered B+-tre på **epost** for denne tabellen. Epostattributtet er 25 byte stort. Epost er et unikt attributt. Blokkene i dette B+-treet er også 4096 byte (4KB) store. Anta at blokker i B+-trær har fyllgrad på 2/3.
+
+a) Hvor mange blokker får vi på løvnivå (level=0) i det clustered B+-treet?
+
+**Skriv ditt svar her**
+
+**Maks poeng:** 16 (totalt for Problem 3)
+
+---
+
+## Exercise 14 — D2024_K Problem 3b: Access paths / query processing (16 % total)
+
+Vi har en tabell med studentposter, **Student (studnr, navn, epost, studieprogram)**, som er 100 byte store. Nøkkelen **studnr** er 4 byte stor. Postene er lagret i et clustered B+-tre med blokker som er 4096 byte store. En BlockId er 8 byte. Tabellen inneholder 40 000 poster.
+I tillegg til dette har vi et unclustered B+-tre på **epost** for denne tabellen. Epostattributtet er 25 byte stort. Epost er et unikt attributt. Blokkene i dette B+-treet er også 4096 byte (4KB) store. Anta at blokker i B+-trær har fyllgrad på 2/3.
+
+b) Hvor mange blokker får vi på løvnivå (level=0)  i det unclustered B+-treet?
+
+**Skriv ditt svar her**
+
+**Maks poeng:** 16 (totalt for Problem 3)

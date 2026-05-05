@@ -9,7 +9,7 @@
 - Snapshot-isolation execution: compute final value of an item under two concurrent transactions where one reads-modifies-writes.
 - True/false on SI vs. serializable, write-skew, lost-update under SI.
 
-**Total exercises:** 16 — sourced from D2018, D2018_K, D2019, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
+**Total exercises:** 17 — sourced from D2018, D2018_K, D2019, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 
 ---
 
@@ -342,5 +342,21 @@ r1(X); r2(X); w1(X); r3(Y); c1; w2(Y); c2; r3(Z); c3;
 - [ ] T1; T2; T3;
 - [ ] Ingen av de andre alternativene stemmer
 - [ ] T2; T3; T1;
+
+**Maks poeng:** 7
+
+---
+
+## Exercise 17 — D2024_K Problem 6: Lock setting 2PL (7 %)
+
+Vi antar tofaselåsing av typen rigorous. Den følgende sekvensen av operasjoner mot databasen skaper en vranglås. Tegn opp låsedatastrukturen med de tre transaksjonene og de 2 dataelementene, som viser hvilke låser som holdes og hvilke som ønskes i dette tilfellet hvor vranglåsen har oppstått.
+
+```text
+H2: r1(A); w2(B); w2(A); w3(B); w1(B); C1; C2; C3;
+```
+
+Tegn på ark.
+
+**Skriv ditt svar her**
 
 **Maks poeng:** 7

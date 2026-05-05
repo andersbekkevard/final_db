@@ -12,7 +12,7 @@
 - Pick best storage configuration for a stated mixed workload (clustered vs. unclustered B+).
 - True/false claims about clustered-B+-tree access costs.
 
-**Total exercises:** 23 — sourced from D2018, D2018_K, D2019, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
+**Total exercises:** 25 — sourced from D2018, D2018_K, D2019, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 
 ---
 
@@ -485,3 +485,29 @@ Hvor mange blokker aksesseres ved optimal utføring av dette queriet?
 - [ ] 1002
 
 **Maks poeng:** 5
+
+---
+
+## Exercise 24 — D2024_K Problem 3c: Access paths / query processing (16 % total)
+
+Vi har en tabell med studentposter, **Student (studnr, navn, epost, studieprogram)**, som er 100 byte store. Nøkkelen **studnr** er 4 byte stor. Postene er lagret i et clustered B+-tre med blokker som er 4096 byte store. En BlockId er 8 byte. Tabellen inneholder 40 000 poster.
+I tillegg til dette har vi et unclustered B+-tre på **epost** for denne tabellen. Epostattributtet er 25 byte stort. Epost er et unikt attributt. Blokkene i dette B+-treet er også 4096 byte (4KB) store. Anta at blokker i B+-trær har fyllgrad på 2/3.
+
+c) Vi søker etter en student med studnr 123456. Hvor mange blokker aksesseres totalt?
+
+**Skriv ditt svar her**
+
+**Maks poeng:** 16 (totalt for Problem 3)
+
+---
+
+## Exercise 25 — D2024_K Problem 3d: Access paths / query processing (16 % total)
+
+Vi har en tabell med studentposter, **Student (studnr, navn, epost, studieprogram)**, som er 100 byte store. Nøkkelen **studnr** er 4 byte stor. Postene er lagret i et clustered B+-tre med blokker som er 4096 byte store. En BlockId er 8 byte. Tabellen inneholder 40 000 poster.
+I tillegg til dette har vi et unclustered B+-tre på **epost** for denne tabellen. Epostattributtet er 25 byte stort. Epost er et unikt attributt. Blokkene i dette B+-treet er også 4096 byte (4KB) store. Anta at blokker i B+-trær har fyllgrad på 2/3.
+
+d) Vi søker etter en student for å finne hans studieprogram. Vi søker med epost= 'hansnils@stud.ntnu.no'. Hvor mange blokker aksesseres totalt med dette queriet? Vi antar at epostadressen det søkes etter, finnes.
+
+**Skriv ditt svar her**
+
+**Maks poeng:** 16 (totalt for Problem 3)

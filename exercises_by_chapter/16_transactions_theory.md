@@ -6,7 +6,7 @@
 - Given a list of histories (with `r/w/c/a`), classify each as unrecoverable / recoverable / ACA / strict (pick the *strongest* property).
 - Given a set of histories, pick the conflict-serializable ones (build the precedence graph, look for cycles).
 
-**Total exercises:** 14 — sourced from D2018, D2019_K, D2021, D2022, D2023_K, D2024, D2025.
+**Total exercises:** 16 — sourced from D2018, D2019_K, D2021, D2022, D2023_K, D2024, D2024_K, D2025.
 
 ---
 
@@ -235,3 +235,36 @@ Hvilke av de følgende historiene er konliktserialiserbare?
 - [ ] `r2(A); w1(B); w2(A); r3(A); w2(B); w3(A); r1(B); w2(B);`
 
 **Maks poeng:** 6
+
+---
+
+## Exercise 15 — D2024_K Problem 4: Recovery properties (3 %)
+
+Gitt følgende historier:
+
+```text
+H1: w2(A);w1(B);w1(A);r2(B);c1;c2;
+H2: w1(A);w1(B);w2(A);c1;r2(B);c2;
+H3: w1(A);c1;w2(B);w2(A); r2(B);c2;
+```
+
+Klassifiser disse historiene med sine mest spesifikke recoveryegenskaper.
+
+**Skriv ditt svar her**
+
+**Maks poeng:** 3
+
+---
+
+## Exercise 16 — D2024_K Problem 5: Conflict serializability (4 %)
+
+Hvilke av de følgende historiene er konfliktserialiserbare?
+
+**Velg ett eller flere alternativer**
+
+- [ ] `r1(X); r2(Z); r1(Z); r3(X); r3(Y); w1(X); w3(Y); r2(Y); w2(Z); w2(Y);`
+- [ ] `r1(X); w2(Z); r1(Z); r3(Z); r3(Y); w2(X); w3(Y); r2(Y); w1(Z); w2(Y);`
+- [ ] `r2(A);r1(B);w2(A);r2(B); r3(A);w1(B);w3(A);w2(B);`
+- [ ] `r1(Y); w3(X); r3(Y); w2(X); r1(X); r2(Z);`
+
+**Maks poeng:** 4

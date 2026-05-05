@@ -31,6 +31,7 @@ Includes: design from prose, ER critique, ER → relational mapping, instance / 
 - D2023 Problem 6 — comic-strip ER.
 - D2023_K Problem 1 — buy/sell second-hand marketplace EER.
 - D2024 Problem 15 — Utra building / energy ER.
+- D2024_K Problem 13 — relational schema → EER (person/student/lærer/emne).
 - D2025 Problem 14 — "Eksperter i Team" course ER.
 
 ---
@@ -56,6 +57,7 @@ Includes: `SELECT` with joins / aggregation / `NOT EXISTS` / sub-queries / order
 - D2020 Problem 6 — `INSERT` statements for 6 April 2020 data.
 - D2023 Problem 4 — equivalence of SQL/RA queries (cross/natural/inner joins).
 - D2024 Problem 11 — choose correct SQL queries (`NOT IN`, `EXISTS`).
+- D2024_K Problem 10 — average stars per leieobjekt in Utskarpen, sorted desc.
 
 ---
 
@@ -69,6 +71,7 @@ Includes: write an RA expression / tree, read a given RA expression and explain 
 - D2019_K Problem 4 — persons allocated to NTNU-Campus.
 - D2020 Problem 3 — fill in 6 boxes (A–F) of RA query (Corona DB).
 - D2024 Problem 10 — choose correct RA expressions.
+- D2024_K Problem 9 — hosts of leieobjekt in Straumbygda, Norge (graph notation).
 - D2025 Problem 13 — Nordland cities ≥ 10 000 inhabitants, sorted desc.
 
 ---
@@ -89,6 +92,7 @@ Includes: derive FDs (Armstrong), compute attribute closure `X+`, find candidate
 - D2020 Problem 9 — primary key and max rows given C→BD.
 - D2023 Problem 1 — candidate keys for R given F={BC→A; D→C}.
 - D2024 Problem 12 — FD reasoning: X, Y values given A→B, CD→B.
+- D2024_K Problem 12 — MVD reasoning: which tuples must exist given two MVDs on `passersammen`.
 
 ---
 
@@ -117,6 +121,7 @@ Includes: BCNF / 3NF decomposition with proof; lossless-join / FD-preserving che
 - D2019_K Problem 10 — explain non-lossless decomposition with example.
 - D2023 Problem 3 — does R(A..F) → R1(A,B,C), R2(D,E,F) preserve the join.
 - D2024 Problem 14 — properties of decomposition R(A..E) → R1(A,B), R2(C,D,E).
+- D2024_K Problem 11 — BCNF decomposition of `friidrettResultat` with proof of attribute / FD / lossless preservation.
 - D2025 Problem 12 — decompose `Exam` table to BCNF (preserving FDs, lossless).
 
 ---
@@ -140,6 +145,7 @@ Final "if anything is unclear, write to the sensor here" box. Listed for complet
 - D2023 Problem 19.
 - D2023_K Problem 13.
 - D2024 Problem 16.
+- D2024_K Problem 14.
 - D2025 Problem 15.
 
 ---
@@ -148,14 +154,14 @@ Final "if anything is unclear, write to the sensor here" box. Listed for complet
 
 | Topic | # problems |
 |---|---:|
-| ER / EER modeling | 21 |
-| SQL | 17 |
-| Relational algebra | 7 |
-| Functional dependencies | 12 |
+| ER / EER modeling | 22 |
+| SQL | 18 |
+| Relational algebra | 8 |
+| Functional dependencies | 13 |
 | Normal-form determination | 9 |
-| Decomposition | 6 |
+| Decomposition | 7 |
 | Conceptual short-answer | 3 |
-| 0-pt placeholder | 6 |
-| **Total** | **81** |
+| 0-pt placeholder | 7 |
+| **Total** | **87** |
 
-(Total primary 109 + total here 81 = 190; note D2019 Problem 9 appears under both FD and Decomposition since the agent flagged both readings.)
+(Total primary 120 + total here 87 = 207; note D2019 Problem 9 appears under both FD and Decomposition since the agent flagged both readings.)

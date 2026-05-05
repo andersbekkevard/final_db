@@ -4,8 +4,8 @@ Problems are mapped **cumulatively** to the highest curriculum chapter they touc
 Pre-curriculum topics (ER / SQL / relational algebra / FD / normal forms /
 decomposition / non-storage conceptual) live in `topic_index.md`.
 
-Source: 11 final-exam papers (`md/exams/problems/`): D2018, D2018_K, D2019,
-D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
+Source: 12 final-exam papers (`md/exams/problems/`): D2018, D2018_K, D2019,
+D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 
 ---
 
@@ -43,9 +43,11 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
 
 **About:** Block as the unit of I/O — slot directory, RID = (BlockId, slot), records-grow-up + page-directory-grows-down, flip/flop checksums.
 
-**Exercise types seen on exams:** none isolated (background for ch. 6, 7, 10, 12).
+**Exercise types seen on exams:**
+- Draw / annotate the slotted-page layout for a stated record set: header, records-grow-up region, trailing pointer/slot vector (records-grow-down).
 
-**Practice problems:** none directly.
+**Practice problems:**
+- D2024_K Problem 2 — slotted page with trailing pointer vector (first ever isolated Ch 4 exam exercise).
 
 ---
 
@@ -140,6 +142,9 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
 - D2023 Problem 8 — clustered B+-tree leaf-block count, fill 2/3.
 - D2023_K Problem 2 — insert 10 keys, show splits.
 - D2024 Problem 1 — which insertion sequence yields the given tree.
+- D2024_K Problem 1 — insert 5 keys; figure fan-out from 1000 B records / 4096 B blocks, then construct.
+- D2024_K Problem 3a — clustered B+-tree leaf-block count, 40 000 records of 100 B, fill 2/3.
+- D2024_K Problem 3b — unclustered B+-tree leaf-block count on `epost` (25 B).
 - D2025 Problem 1 — leaf-block count given record/block size.
 - D2025 Problem 2 — level-1 block count.
 
@@ -190,6 +195,8 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
 - D2023_K Problem 3 — `WHERE bwid=2001`.
 - D2023_K Problem 5 — `SELECT *` (clustered hash).
 - D2024 Problem 8 — best storage choice (clustered vs. unclustered B+) for mixed workload.
+- D2024_K Problem 3c — `WHERE studnr=123456` on clustered B+.
+- D2024_K Problem 3d — `WHERE epost='hansnils@stud.ntnu.no'` on unclustered B+.
 - D2025 Problem 3 — `SELECT EtterNavn WHERE AnsattId=12001`.
 - D2025 Problem 4 — `SELECT ForNavn WHERE EtterNavn='Johannessen'`.
 - D2025 Problem 5 — `SELECT EtterNavn ORDER BY EtterNavn DESC`.
@@ -262,6 +269,8 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
 - D2023_K Problem 9 — recoverability class.
 - D2023_K Problem 10 — pick conflict-serializable histories.
 - D2024 Problem 9 — pick conflict-serializable histories.
+- D2024_K Problem 4 — classify H1/H2/H3 on the recoverability hierarchy.
+- D2024_K Problem 5 — pick conflict-serializable histories.
 - D2025 Problem 6 — pick conflict-serializable histories.
 
 ---
@@ -292,6 +301,7 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
 - D2023_K Problem 6 — true/false on snapshot isolation.
 - D2024 Problem 3 — commit order under rigorous 2PL.
 - D2024 Problem 4 — final value of `D` under snapshot isolation.
+- D2024_K Problem 6 — rigorous 2PL deadlock: draw lock data structure showing held + wanted locks.
 - D2025 Problem 9 — find the originating operation sequence from a lock-table figure.
 - D2025 Problem 10 — commit order under rigorous 2PL.
 
@@ -333,6 +343,8 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
 - D2024 Problem 5 — Analysis: DPT after analysis.
 - D2024 Problem 6 — Undo: log records generated.
 - D2024 Problem 7 — which pages can we be sure were flushed.
+- D2024_K Problem 7 — Redo: per-update justification given PageLSNs.
+- D2024_K Problem 8 — why must Redo come before Undo (conceptual).
 - D2025 Problem 7 — Analysis: DPT after analysis.
 - D2025 Problem 8 — which pages can we be sure were flushed (with steal hint).
 
@@ -345,21 +357,21 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2025.
 | 1  | DBMS architecture | 0 |
 | 2  | Database storage | 0 |
 | 3  | Record format | 0 |
-| 4  | Block format | 0 |
+| 4  | Block format | 1 |
 | 5  | Database buffer | 0 |
 | 6  | Heap files | 1 |
 | 7  | Static hashing | 2 |
 | 8  | Extendible hashing | 8 |
 | 9  | Indexing concepts | 1 |
-| 10 | B+-trees | 11 |
+| 10 | B+-trees | 14 |
 | 11 | LSM trees | 0 |
-| 12 | Queries / access paths | 23 |
+| 12 | Queries / access paths | 25 |
 | 13 | JOIN queries | 4 |
 | 14 | External merge sort | 1 |
 | 15 | Intro transactions | 3 |
-| 16 | Transactions theory | 14 |
-| 17 | Concurrency control | 16 |
-| 18 | Recovery / ARIES | 25 |
-|    | **Total (primary)** | **109** |
+| 16 | Transactions theory | 16 |
+| 17 | Concurrency control | 17 |
+| 18 | Recovery / ARIES | 27 |
+|    | **Total (primary)** | **120** |
 
 Pre-curriculum problems (ER / SQL / RA / FD / NF / decomposition / non-storage conceptual / 0-pt placeholder) — see `topic_index.md`.
