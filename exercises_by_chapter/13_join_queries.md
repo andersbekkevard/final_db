@@ -11,7 +11,7 @@
 
 ---
 
-## Exercise 1 — D2018_K Problem 16: Join (5 %)
+## D2018_K Problem 7: Join (5 %)
 
 Vi har to tabeller lagret som heapfiler, Passeringer og Kjøretøy, som skal joines i et query. Passeringer består av 15 000 blokker og Kjøretøy av 300 blokker. Regn ut datavolumet i antall blokker lest ved en nested-loop-join av de to tabellene når det er plass til 32 blokker samtidig i buffer.
 
@@ -21,7 +21,7 @@ Vi har to tabeller lagret som heapfiler, Passeringer og Kjøretøy, som skal joi
 
 ---
 
-## Exercise 2 — D2021 Problem 12: Join (5 %)
+## D2021 Problem 12: Join (5 %)
 
 Vi har følgjande to tabellar:
 
@@ -52,7 +52,7 @@ Føresett du har plass for 8 diskblokker tilgjengeleg i buffer. Kor mange I/Oar 
 
 ---
 
-## Exercise 3 — D2022 Problem 11: Join (5%)
+## D2022 Problem 11: Join (5%)
 
 To tabeller Klasse og Student skal joines ved en nested loop join. Bufferet har 8 plasser til blokker, tabellen Klasse har 12 blokker og tabellen Student har 1400 blokker. Hvor mange lesinger av blokker skjer ved joinen?
 
@@ -68,7 +68,7 @@ To tabeller Klasse og Student skal joines ved en nested loop join. Bufferet har 
 
 ---
 
-## Exercise 4 — D2023 Problem 10: Join (7 %)
+## D2023 Problem 10: Join (7 %)
 
 Vi skal joine to tabeller `Class` og `Student` med nested loop-join.
 

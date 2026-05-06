@@ -13,7 +13,7 @@
 
 ---
 
-## Exercise 1 — D2018_K Problem 12: Extendible hashing (5 %)
+## D2018_K Problem 5: Extendible hashing (5 %)
 
 Vi skal sette inn følgende nøkler i en extendible hashing-struktur: 27, 18, 9, 7, 16, 13, 15. Vi har 4 blokker i utgangspunktet hvor både global og lokal dybde er 2. Hver blokk har plass til to nøkler. Se figuren under. Du skal bruke hashfunksjonen:
 
@@ -29,7 +29,7 @@ Tegn dette på et ark.
 
 ---
 
-## Exercise 2 — D2019 Problem 13: Extendible hashing (5 %)
+## D2019 Problem 13: Extendible hashing (5 %)
 
 Vi har en extendible hashing-datastruktur. Når vi startet hadde den global dybde 2. Akkurat nå har den global dybde 5. Hvilke verdier kan lokal dybde ha i denne extendible hashing-datstrukturen? Forklar svaret ditt.
 
@@ -37,7 +37,7 @@ Vi har en extendible hashing-datastruktur. Når vi startet hadde den global dybd
 
 ---
 
-## Exercise 3 — D2019_K Problem 13 (10 %)
+## D2019_K Problem 13 (10 %)
 
 Sett inn følgende nøkler i en extendible hashstuktur.
 
@@ -55,7 +55,7 @@ Denne oppgaven må besvares på papir.
 
 ---
 
-## Exercise 4 — D2020 Problem 11 (5 %)
+## D2020 Problem 11 (5 %)
 
 Vi har en extendible hashingstruktur hvor vi starter med 4 blokker (binært: 00, 01, 10, 11), hvor hver blokk har plass til to nøkler.
 
@@ -71,7 +71,7 @@ Husk å svare på begge spørsmålene.
 
 ---
 
-## Exercise 5 — D2021 Problem 5: Extendible hashing (4 %)
+## D2021 Problem 5: Extendible hashing (4 %)
 
 **Figur:** Extendible hashing-struktur etter directory doubling. Directory `a` har 8 element merkte `000`, `001`, `010`, `011`, `100`, `101`, `110`, `111`. Desse peikar til fem blokker merkte `b`, `c`, `d`, `e`, `f`:
 
@@ -89,7 +89,7 @@ Føresett ein extendible hashingstruktur startar med 4 blokker og 4 element i di
 
 ---
 
-## Exercise 6 — D2022 Problem 2: Extendible hashing (6 %)
+## D2022 Problem 2: Extendible hashing (6 %)
 
 **Figur:**
 
@@ -150,7 +150,7 @@ I denne oppgaven får du poeng for hvert riktige svar og trekk for hvert feil sv
 
 ---
 
-## Exercise 7 — D2023 Problem 9: Extendible hashing (7 %)
+## D2023 Problem 9: Extendible hashing (7 %)
 
 Vi har en extendible hashing-struktur hvor vi starter med 4 blokker og 4 pekere fra directory. Det er plass til 3 nøkler i hver blokk. Hvor mange blokker med lokal dybde = 3 får vi når vi har satt inn følgende sekvens med nøkler:
 
@@ -173,7 +173,7 @@ Du kan bruke hashfunkjsonen `h(K) = K MOD 8`.
 
 ---
 
-## Exercise 8 — D2024 Problem 2: Extendible hashing (5 %)
+## D2024 Problem 2: Extendible hashing (5 %)
 
 Vi starter med en extendible hashingstruktur hvor det er 4 pekere til 4 tomme blokker. Dvs. lokal og global dybde er 2. Hver blokk har plass til to nøkler. Så settes de følgende nøklene inn:
 

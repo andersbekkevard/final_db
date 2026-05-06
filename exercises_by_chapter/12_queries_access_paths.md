@@ -28,7 +28,7 @@ Det er 1000 blokker på løvnivå (nivå=0) i B+-treet og det er tre nivå med b
 
 ---
 
-## Exercise 1 — D2018 Problem 6a (2.5 %)
+## D2018 Problem 6a (2.5 %)
 
 Hvor mange blokker aksesseres ved utføring av det følgende query. Begrunn svaret ditt.
 
@@ -42,7 +42,7 @@ WHERE exno=2 AND studno=123456;
 
 ---
 
-## Exercise 2 — D2018 Problem 6b (2.5 %)
+## D2018 Problem 6b (2.5 %)
 
 Hvor mange blokker aksesseres ved utføring av det følgende query. Begrunn svaret ditt.
 
@@ -56,7 +56,7 @@ WHERE studno=123456 AND approval_status="Disapproved";
 
 ---
 
-## Exercise 3 — D2018 Problem 6c (2.5 %)
+## D2018 Problem 6c (2.5 %)
 
 Hvor mange blokker aksesseres ved utføring av det følgende query. Begrunn svaret ditt.
 
@@ -70,7 +70,7 @@ ORDER BY exno ASC, studno ASC;
 
 ---
 
-## Exercise 4 — D2018 Problem 6d (2.5 %)
+## D2018 Problem 6d (2.5 %)
 
 Hvor mange blokker aksesseres ved utføring av det følgende query. Begrunn svaret ditt.
 
@@ -85,7 +85,7 @@ GROUP BY exno;
 
 ---
 
-*Shared setup for D2018_K Problems 14 and 15:*
+*Shared setup for D2018_K Problems 6b and 6c:*
 
 Vi har en database som lagrer bomringpasseringer i en tabell:
 
@@ -97,7 +97,7 @@ Hver post (record) i tabellen er 120 byte lang og hver blokk er 8 KB (8192 bytes
 
 ---
 
-## Exercise 5 — D2018_K Problem 14: Lagring, indeksering og queries - b (3 %)
+## D2018_K Problem 6b: Lagring, indeksering og queries (3 %)
 
 Vi ønsker å utføre følgende query:
 
@@ -115,7 +115,7 @@ Hvor mange blokker aksesseres for å utføre dette queriet? Begrunn svaret ditt.
 
 ---
 
-## Exercise 6 — D2018_K Problem 15: Lagring, indeksering og queries - c (3 %)
+## D2018_K Problem 6c: Lagring, indeksering og queries (3 %)
 
 Gitt følgende query:
 
@@ -147,7 +147,7 @@ Antall studenter i tabellen er 50 000. Heapfilen inneholder 1000 blokker. B+-tre
 
 ---
 
-## Exercise 7 — D2019 Problem 14: Access paths (2.5 %)
+## D2019 Problem 14: Access paths (2.5 %)
 
 Gi et overslag på hvor mange blokker som aksesseres ved følgende SQL-setning. Gi en begrunnelse for ditt svar.
 
@@ -159,7 +159,7 @@ SELECT * FROM Student;
 
 ---
 
-## Exercise 8 — D2019 Problem 15: Access paths (2.5 %)
+## D2019 Problem 15: Access paths (2.5 %)
 
 Gi et overslag på hvor mange blokker som aksesseres ved følgende SQL-setning. Gi en begrunnelse for ditt svar.
 
@@ -171,7 +171,7 @@ SELECT * FROM Student WHERE pno=12121212345;
 
 ---
 
-## Exercise 9 — D2019 Problem 16: Access paths (2.5 %)
+## D2019 Problem 16: Access paths (2.5 %)
 
 Gi et overslag på hvor mange blokker som aksesseres ved følgende SQL-setning. Gi en begrunnelse for ditt svar.
 
@@ -183,7 +183,7 @@ SELECT * FROM Student WHERE lastname='Hansen';
 
 ---
 
-## Exercise 10 — D2019 Problem 17: Access paths (2.5 %)
+## D2019 Problem 17: Access paths (2.5 %)
 
 Gi et overslag på hvor mange blokker som aksesseres ved følgende SQL-setning. Gi en begrunnelse for ditt svar.
 
@@ -195,7 +195,7 @@ SELECT DISTINCT lastname FROM Student;
 
 ---
 
-## Exercise 11 — D2020 Problem 13 (10 %)
+## D2020 Problem 13 (10 %)
 
 Vi har en tabell Student (studnr, pnr, fornavn, etternavn, studieprogram, epost)
 
@@ -221,7 +221,7 @@ Husk å svare på alle 4 delspørsmålene.
 
 ---
 
-## Exercise 12 — D2021 Problem 8: Access methods (3 %)
+## D2021 Problem 8: Access methods (3 %)
 
 Føresett vi har ein tabell Birdwatcher(bwid, name, address, age, ...) med 10000 radar. Attributtet bwid er primærnøkkel for tabellen. Tabellen er lagra i eit clustered B+-tre med bwid som søkjenøkkel, der løvnodane (level=0) i B+-treet er 750 blokker. Det er tre nivå med blokker i B+-treet. Kor mange blokkaksessar får vi med SQL-setningen `"SELECT * FROM Birdwatcher where bwid=2001;"`?
 
@@ -236,7 +236,7 @@ Føresett vi har ein tabell Birdwatcher(bwid, name, address, age, ...) med 10000
 
 ---
 
-## Exercise 13 — D2021 Problem 9: Access methods (3 %)
+## D2021 Problem 9: Access methods (3 %)
 
 Føresett vi har ein tabell Birdwatcher(bwid, ...) med 10000 rader. Attributtet bwid er primærnøkkel for tabellen. Tabellen er lagra i ein clustered, statisk hash-struktur med bwid som søkjenøkkel, der alle radane får plass i 500 blokker. Gjennomsnittleg aksesserast 1.25 blokker per søk på bwid. Kor mange blokkaksessar får vi med SQL-setningen `"SELECT * FROM Birdwatcher;"`?
 
@@ -251,7 +251,7 @@ Føresett vi har ein tabell Birdwatcher(bwid, ...) med 10000 rader. Attributtet 
 
 ---
 
-## Exercise 14 — D2022 Problem 9: Misc (6 %)
+## D2022 Problem 9: Misc (6 %)
 
 Vi har en tabell Ansatt(aid, navn, epost) som er lagret i et clustered B+-tre hvor primærnøkkel i tabellen og søkenøkkel i B+-treet er aid. B+-treet har 2000 blokker på løvnivå og har høyde 3.
 
@@ -291,7 +291,7 @@ Tabellen heter `Tab` og søkenøkkelen heter `mykey`. Den er lagret i et cluster
 
 ---
 
-## Exercise 15 — D2023 Problem 12: Access paths (2 %)
+## D2023 Problem 12: Access paths (2 %)
 
 Hvilke sekvens av blokker aksesseres ved følgende query?
 
@@ -312,7 +312,7 @@ SELECT mykey FROM Tab WHERE mykey=7;
 
 ---
 
-## Exercise 16 — D2023 Problem 13: Access paths (2 %)
+## D2023 Problem 13: Access paths (2 %)
 
 Hvilken sekvens av blokker aksesseres ved følgende query?
 
@@ -333,7 +333,7 @@ SELECT mykey FROM Tab WHERE mykey<7;
 
 ---
 
-## Exercise 17 — D2023 Problem 14: Access paths (2 %)
+## D2023 Problem 14: Access paths (2 %)
 
 Hvilken sekvens av blokker aksesseres ved følgende query?
 
@@ -354,7 +354,7 @@ SELECT mykey FROM Tab ORDER BY mykey ASC;.
 
 ---
 
-## Exercise 18 — D2023_K Problem 3: Aksessmetoder (3 %)
+## D2023_K Problem 3: Aksessmetoder (3 %)
 
 Anta vi har en tabell Birdwatcher(bwid, name, address, age, …) med 8000 rader. Attributtet bwid er primærnøkkel for tabellen. Tabellen er lagret i et clustered B+-tre med bwid som søkenøkkel, der løvnodene (level=0) i B+-treet har 550 blokker. Det er tre nivåer med blokker i B+-treet. Hvor mange blokkaksesser får vi med SQL-setningen “SELECT name, age FROM Birdwatcher where bwid=2001;”?
 
@@ -369,7 +369,7 @@ Anta vi har en tabell Birdwatcher(bwid, name, address, age, …) med 8000 rader.
 
 ---
 
-## Exercise 19 — D2023_K Problem 5: Aksessmetoder (3 %)
+## D2023_K Problem 5: Aksessmetoder (3 %)
 
 Anta vi har en tabell Birdwatcher(bwid, …) med 8000 rader. Attributtet bwid er primærnøkkel for tabellen. Tabellen er lagret i en clustered, statisk hash-struktur med bwid som søkenøkkel, der alle fugletitterne får plass i 450 blokker. Gjennomsnittlig aksesseres 1.25 blokker per søk på bwid. Hvor mange blokkaksesser får vi med SQL-setningen “SELECT * FROM Birdwatcher;”?
 
@@ -384,7 +384,7 @@ Anta vi har en tabell Birdwatcher(bwid, …) med 8000 rader. Attributtet bwid er
 
 ---
 
-## Exercise 20 — D2024 Problem 8: Clustered vs unclustered B+-tree (15 %)
+## D2024 Problem 8: Clustered vs unclustered B+-tree (15 %)
 
 Vi har en tabell Product (prId, pName, producer, model) med 10000 rader (poster), hvor prId er 8 byte, pName er 40 byte, producer er 40 byte og model er 32 byte. Dvs. en post i tabellen er 120 byte. Hver blokk i systemet er 4096 byte. Vi antar at en B+-tre-blokk fylles 2/3, mens en Heapfil-blokk fylles med så mange poster det er plass til uten å dele opp poster. En BlockId er 8 byte og en RecordID er 12 byte i dette systemet.
 
@@ -416,7 +416,7 @@ Vi har et clustered B+-tre hvor vi lagrer ansattposter, hvor hver post er 120 by
 
 ---
 
-## Exercise 21 — D2025 Problem 3: Access paths (5 %)
+## D2025 Problem 3: Access paths (5 %)
 
 Vi har queriet:
 
@@ -440,7 +440,7 @@ Hvor mange blokker aksesseres ved optimal utføring av dette queriet?
 
 ---
 
-## Exercise 22 — D2025 Problem 4: Access paths (5 %)
+## D2025 Problem 4: Access paths (5 %)
 
 Vi har queriet:
 
@@ -465,7 +465,7 @@ Du kan anta at det finnes kun en med etternavn 'Johannessen' i B+-treet.
 
 ---
 
-## Exercise 23 — D2025 Problem 5: Access Paths (5 %)
+## D2025 Problem 5: Access Paths (5 %)
 
 Vi har queriet:
 
@@ -488,7 +488,7 @@ Hvor mange blokker aksesseres ved optimal utføring av dette queriet?
 
 ---
 
-## Exercise 24 — D2024_K Problem 3c: Access paths / query processing (16 % total)
+## D2024_K Problem 3c: Access paths / query processing (16 % total)
 
 Vi har en tabell med studentposter, **Student (studnr, navn, epost, studieprogram)**, som er 100 byte store. Nøkkelen **studnr** er 4 byte stor. Postene er lagret i et clustered B+-tre med blokker som er 4096 byte store. En BlockId er 8 byte. Tabellen inneholder 40 000 poster.
 I tillegg til dette har vi et unclustered B+-tre på **epost** for denne tabellen. Epostattributtet er 25 byte stort. Epost er et unikt attributt. Blokkene i dette B+-treet er også 4096 byte (4KB) store. Anta at blokker i B+-trær har fyllgrad på 2/3.
@@ -501,7 +501,7 @@ c) Vi søker etter en student med studnr 123456. Hvor mange blokker aksesseres t
 
 ---
 
-## Exercise 25 — D2024_K Problem 3d: Access paths / query processing (16 % total)
+## D2024_K Problem 3d: Access paths / query processing (16 % total)
 
 Vi har en tabell med studentposter, **Student (studnr, navn, epost, studieprogram)**, som er 100 byte store. Nøkkelen **studnr** er 4 byte stor. Postene er lagret i et clustered B+-tre med blokker som er 4096 byte store. En BlockId er 8 byte. Tabellen inneholder 40 000 poster.
 I tillegg til dette har vi et unclustered B+-tre på **epost** for denne tabellen. Epostattributtet er 25 byte stort. Epost er et unikt attributt. Blokkene i dette B+-treet er også 4096 byte (4KB) store. Anta at blokker i B+-trær har fyllgrad på 2/3.

@@ -98,7 +98,7 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 - Pick which of N candidate figures are legal extendible-hash structures.
 
 **Practice problems:**
-- D2018_K Problem 12 — insert 7 keys, h(K)=K mod 8.
+- D2018_K Problem 5 — insert 7 keys, h(K)=K mod 8.
 - D2019 Problem 13 — possible local depths given global depth went 2→5.
 - D2019_K Problem 13 — insert 11 keys.
 - D2020 Problem 11 — first block to split, resulting local depths.
@@ -134,7 +134,7 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 
 **Practice problems:**
 - D2018 Problem 5 — insert 10 keys, show splits.
-- D2018_K Problem 13 — clustered B+-tree sizing: blocks per level.
+- D2018_K Problem 6a — clustered B+-tree sizing: blocks per level.
 - D2019_K Problem 12 — insert 11 keys.
 - D2020 Problem 12 — leaf-block assignment (a–e) for 10 keys.
 - D2021 Problem 6 — which insertion sequence yields a given tree.
@@ -179,8 +179,8 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 - D2018 Problem 6b — partial key + filter.
 - D2018 Problem 6c — ORDER BY full key.
 - D2018 Problem 6d — GROUP BY exno + filter.
-- D2018_K Problem 14 — `WHERE regNo=…` with B+-tree on `passId`.
-- D2018_K Problem 15 — propose index to speed up the query.
+- D2018_K Problem 6b — `WHERE regNo=…` with B+-tree on `passId`.
+- D2018_K Problem 6c — propose index to speed up the query.
 - D2019 Problem 14 — `SELECT * FROM Student`.
 - D2019 Problem 15 — equality via hash index.
 - D2019 Problem 16 — `WHERE lastname='Hansen'` using unclustered B+.
@@ -213,7 +213,7 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 - Note simple optimization: if a small predicate fixes one side to one row, you only scan the other side.
 
 **Practice problems:**
-- D2018_K Problem 16 — `Passeringer × Kjøretøy`, 32-block buffer.
+- D2018_K Problem 7 — `Passeringer × Kjøretøy`, 32-block buffer.
 - D2021 Problem 12 — `Department × Employee`, 8-block buffer.
 - D2022 Problem 11 — `Klasse × Student`, 8-block buffer.
 - D2023 Problem 10 — `Class × Student`, 7-block buffer.
@@ -241,7 +241,7 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 - Pick the SQL isolation level that prevents a stated anomaly (e.g. phantom inserts).
 
 **Practice problems:**
-- D2018_K Problem 17 — explain the C in ACID.
+- D2018_K Problem 8a — explain the C in ACID.
 - D2019_K Problem 15 — explain all four ACID properties.
 - D2020 Problem 14 — isolation level to prevent phantom inserts.
 
@@ -288,7 +288,7 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 
 **Practice problems:**
 - D2018 Problem 8 — apply rigorous 2PL to schedule S3.
-- D2018_K Problem 18 — rewrite history H1 with rigorous-2PL locks.
+- D2018_K Problem 8b — rewrite history H1 with rigorous-2PL locks.
 - D2019 Problem 19 — 2PL execution + deadlock check.
 - D2019 Problem 20 — 2PL execution + deadlock check.
 - D2020 Problem 15 — commit order under rigorous 2PL.
@@ -322,8 +322,8 @@ D2019_K, D2020, D2021, D2022, D2023, D2023_K, D2024, D2024_K, D2025.
 **Practice problems:**
 - D2018 Problem 9a — Analysis: TT and DPT after analysis.
 - D2018 Problem 9b — Undo: rollback list and CLRs.
-- D2018_K Problem 19 — checkpoint contents and use.
-- D2018_K Problem 20 — when must data pages be written in ARIES.
+- D2018_K Problem 9a — checkpoint contents and use.
+- D2018_K Problem 9b — when must data pages be written in ARIES.
 - D2019 Problem 21 — Analysis: TT and DPT.
 - D2019 Problem 22 — Redo: which records get redone given PageLSN.
 - D2019_K Problem 14 — why do we need recovery.

@@ -13,7 +13,7 @@
 
 ---
 
-## Exercise 1 — D2018 Problem 8 (5 %)
+## D2018 Problem 8 (5 %)
 
 Anta følgende historie som det skal settes låser for:
 
@@ -31,7 +31,7 @@ Skriv/tegn utførelsen på et ark.
 
 ---
 
-## Exercise 2 — D2018_K Problem 18: Transaksjoner - b (5 %)
+## D2018_K Problem 8b: Transaksjoner (5 %)
 
 Vi har en historie:
 
@@ -49,7 +49,7 @@ Innfør operasjonene `wl(X)` - `write_lock(X)`, `rl(X)` - `read_lock(X)` og `unl
 
 ---
 
-## Exercise 3 — D2019 Problem 19: Tofaselåsing (5 %)
+## D2019 Problem 19: Tofaselåsing (5 %)
 
 Vi har følgende sekvens av operasjoner som kommer inn til databasen. Vis hvordan denne sekvensen blir utført gitt at vi bruker tofaselåsing av typen rigorous og vranglåsoppdagelse (deadlock detection).
 
@@ -62,7 +62,7 @@ r1(X); r2(X); w1(X); r3(Z); r2(Z); w2(Y); c1; c2; w3(Z); c3;
 
 ---
 
-## Exercise 4 — D2019 Problem 20: Tofaselåsing (5 %)
+## D2019 Problem 20: Tofaselåsing (5 %)
 
 Vi har følgende sekvens av operasjoner som kommer inn til databasen. Vis hvordan denne sekvensen blir utført gitt at vi bruker tofaselåsing av typen rigorous og vranglåsoppdagelse (deadlock detection).
 
@@ -74,7 +74,7 @@ r1(X); r2(Y); r3(Z); w1(Y); w2(Z); w3(X); c1; c2; c3;
 
 ---
 
-## Exercise 5 — D2020 Problem 15 (5 %)
+## D2020 Problem 15 (5 %)
 
 Vi har en historie som vi prøver å få utført ved at transaksjonene setter lese- og skrivelåser. Vi innfører tofaselåsing (2PL) av typen rigorous for denne historien.
 
@@ -88,7 +88,7 @@ Du skal ikke tegne historien, bare skriv rekkefølgen av transaksjonenes commit.
 
 ---
 
-## Exercise 6 — D2021 Problem 3: Miscellaneous (3 %)
+## D2021 Problem 3: Miscellaneous (3 %)
 
 Kva for ein påstand er riktig?
 
@@ -103,7 +103,7 @@ Kva for ein påstand er riktig?
 
 ---
 
-## Exercise 7 — D2021 Problem 11: 2PL Execution (5 %)
+## D2021 Problem 11: 2PL Execution (5 %)
 
 Databasesystemet får inn følgjande sekvens av operasjonar. Vi innfører tofaselåsing (rigorous). I kva for rekkefølgje committer transaksjonane?
 
@@ -125,7 +125,7 @@ Viss fleire transaksjoner blir vekt opp etter ein låsventing, blir dei vekt opp
 
 ---
 
-## Exercise 8 — D2022 Problem 4: Misc (6 %)
+## D2022 Problem 4: Misc (6 %)
 
 Hvilke alternativ er sanne?
 
@@ -144,7 +144,7 @@ I denne oppgaven får du poeng for hvert riktige svar og trekk for hvert feil sv
 
 ---
 
-## Exercise 9 — D2022 Problem 6: 2PL-utføring (5 %)
+## D2022 Problem 6: 2PL-utføring (5 %)
 
 Databasesystemet får inn følgende sekvens av operasjoner. Vi innfører tofaselåsing (rigorous). I hvilken rekkefølge committer transaksjonene?
 
@@ -168,7 +168,7 @@ r1(B); r3(B); w1(A); w2(A); w3(A); c1; c2; c3;
 
 ---
 
-## Exercise 10 — D2023 Problem 15: Locking 2PL (7 %)
+## D2023 Problem 15: Locking 2PL (7 %)
 
 Vi har følgende låser (i figuren) etter en sekvens av operasjoner mot databasen:
 
@@ -206,7 +206,7 @@ Hvilken sekvens av operasjoner vil gi denne tilstanden til låsesystemet (tofase
 
 ---
 
-## Exercise 11 — D2023 Problem 16: Locking 2PL (7 %)
+## D2023 Problem 16: Locking 2PL (7 %)
 
 Vi skal sette tofaselåser (2PL) ved hjelp av metoden rigorous. I hvilken rekkefølge committer de tre transaksjonene T1, T2 og T3?
 
@@ -231,7 +231,7 @@ r1(X); r2(X); w1(X); r3(Y); c1; w2(X); w2(Y); c2; r3(Z); c3;
 
 ---
 
-## Exercise 12 — D2023_K Problem 6: SNAPSHOT ISOLATION (6 %)
+## D2023_K Problem 6: SNAPSHOT ISOLATION (6 %)
 
 Hvilke påstander er riktige?
 
@@ -249,7 +249,7 @@ Hvilke påstander er riktige?
 
 ---
 
-## Exercise 13 — D2024 Problem 3: 2PL - lock setting (5 %)
+## D2024 Problem 3: 2PL - lock setting (5 %)
 
 Vi har følgende historie av operasjoner som står i kø for å utføres av databasesystemet. Her benyttes tofaselåsing (2PL) av typen rigorous. I hvilken rekkefølge committes transaksjonene?
 
@@ -272,7 +272,7 @@ r1(A); w2(B); r3(A); w1(A); r2(C); c1; c2; c3;
 
 ---
 
-## Exercise 14 — D2024 Problem 4: SNAPSHOT ISOLATION (5 %)
+## D2024 Problem 4: SNAPSHOT ISOLATION (5 %)
 
 ```text
 A = 5
@@ -295,7 +295,7 @@ Vi har to transaksjoner (T1 og T2) som deler data i databasen og bruker SNAPSHOT
 
 ---
 
-## Exercise 15 — D2025 Problem 9: Lock setting (7 %)
+## D2025 Problem 9: Lock setting (7 %)
 
 ```text
 Has locks                         ELEMENT                         Wants locks
@@ -324,7 +324,7 @@ Vi har følgende låser (i figuren) etter en sekvens av operasjoner mot database
 
 ---
 
-## Exercise 16 — D2025 Problem 10: Lock setting (7 %)
+## D2025 Problem 10: Lock setting (7 %)
 
 Vi skal sette tofaselåser (2PL) ved hjelp av metoden rigorous. I hvilken rekkefølge committer de tre transaksjonene T1, T2 og T3? Følgende sekvens av operasjoner kommer inn til databasen:
 
@@ -347,7 +347,7 @@ r1(X); r2(X); w1(X); r3(Y); c1; w2(Y); c2; r3(Z); c3;
 
 ---
 
-## Exercise 17 — D2024_K Problem 6: Lock setting 2PL (7 %)
+## D2024_K Problem 6: Lock setting 2PL (7 %)
 
 Vi antar tofaselåsing av typen rigorous. Den følgende sekvensen av operasjoner mot databasen skaper en vranglås. Tegn opp låsedatastrukturen med de tre transaksjonene og de 2 dataelementene, som viser hvilke låser som holdes og hvilke som ønskes i dette tilfellet hvor vranglåsen har oppstått.
 

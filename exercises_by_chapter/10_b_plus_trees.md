@@ -13,7 +13,7 @@
 
 ---
 
-## Exercise 1 — D2018 Problem 5 (10 %)
+## D2018 Problem 5 (10 %)
 
 Sett inn følgende nøkler i et B+-tre i den gitte rekkefølgen: 4, 28, 3, 17, 18, 5, 27, 13, 16, 15
 
@@ -25,7 +25,7 @@ Denne oppgaven må løses på ark.
 
 ---
 
-## Exercise 2 — D2018_K Problem 13: Lagring, indeksering og queries - a (4 %)
+## D2018_K Problem 6a: Lagring, indeksering og queries (4 %)
 
 Vi har en database som lagrer bomringpasseringer i en tabell:
 
@@ -43,7 +43,7 @@ Vi ønsker å lagre tabellen i et clustered B+-tree med passId (8 byte) som søk
 
 ---
 
-## Exercise 3 — D2019_K Problem 12 (10 %)
+## D2019_K Problem 12 (10 %)
 
 Du skal sette inn følgende nøkler i den gitte rekkefølgen i et B+-tre:
 
@@ -61,7 +61,7 @@ Denne oppgaven må besvares på papir.
 
 ---
 
-## Exercise 4 — D2020 Problem 12 (8 %)
+## D2020 Problem 12 (8 %)
 
 Vi skal sette inn nøkler i et B+-tre med plass til tre nøkler i hver blokk. Treet under skal inneholde nøkler på løvnivå (level=0). De er satt inn i den rekkefølgen de står i under. For hver blokk på løvnivå, dvs. (a)-(e), skriv hvilke nøkler som skal inn der. Du skal ikke tegne, bare skriv det som tekst: f.eks. (a): nøkkel 1, nøkkel 2, ... (b): (nøkkel), ...
 
@@ -82,7 +82,7 @@ Følgende nøkler er satt inn:
 
 ---
 
-## Exercise 5 — D2021 Problem 6: B+ tree (10 %)
+## D2021 Problem 6: B+ tree (10 %)
 
 **Figur:** B+-treet har rotblokk med nøkkelen `7`. Venstre internblokk har nøkkelen `4`. Høgre internblokk har nøklane `13` og `17`. Løvnivået frå venstre mot høgre er:
 
@@ -103,7 +103,7 @@ Følgjande sekvensar av innsettingar er tilgjengeleg. Kva for ein av disse gir B
 
 ---
 
-## Exercise 6 — D2022 Problem 1: B+-tre (10 %)
+## D2022 Problem 1: B+-tre (10 %)
 
 ```text
                          root
@@ -127,7 +127,7 @@ Følgende sekvenser av innsettinger er tilgjengelige. Hvilken av disse gir B+-tr
 
 ---
 
-## Exercise 7 — D2023 Problem 8: Clustered B+-tre (6 %)
+## D2023 Problem 8: Clustered B+-tre (6 %)
 
 Vi har poster som er 120 byte store.
 
@@ -146,7 +146,7 @@ Vi har en tabell med 8 000 poster. Hvor mange blokker har vi på level=0 i et cl
 
 ---
 
-## Exercise 8 — D2023_K Problem 2: B+-tre (15 %)
+## D2023_K Problem 2: B+-tre (15 %)
 
 Tegn opp B+-treet som finnes etter innsetting av følgende sekvens av nøkler:
 
@@ -166,7 +166,7 @@ Denne oppgaven skal leveres på ark.
 
 ---
 
-## Exercise 9 — D2024 Problem 1: B+-trees (10 %)
+## D2024 Problem 1: B+-trees (10 %)
 
 ```text
                          root
@@ -192,7 +192,7 @@ Anta det er plass til tre nøkler i hver blokk, og inntil 4 pekere til blokker p
 
 ---
 
-## Exercise 10 — D2025 Problem 1: B+-trees (5 %)
+## D2025 Problem 1: B+-trees (5 %)
 
 Vi har et clustered B+-tre hvor vi setter inn 20200 studentposter av størrelse 120 byte. Nøkkelen i posten er studNr og er 4 byte stor. En RecordID er 12 byte og en BlockId er 8 byte. En blokk er 4096 (4K) byte. Hvor mange blokker finnes på løvnivå (level=0) i B+-treet etter at alle postene er satt inn? Anta blokkene har 2/3 fyllgrad.
 
@@ -209,7 +209,7 @@ Vi har et clustered B+-tre hvor vi setter inn 20200 studentposter av størrelse 
 
 ---
 
-## Exercise 11 — D2025 Problem 2: B+-tree (5 %)
+## D2025 Problem 2: B+-tree (5 %)
 
 Vi har et clustered B+-tre hvor vi setter inn 20200 studentposter av størrelse 120 byte. Nøkkelen i posten er studNr og er 4 byte stor. En RecordID er 12 byte og en BlockId er 8 byte. En blokk er 4096 (4K) byte. Hvor mange blokker finnes på level=1 i B+-treet etter at alle postene er satt inn? Anta blokkene har 2/3 fyllgrad.
 
@@ -226,7 +226,7 @@ Vi har et clustered B+-tre hvor vi setter inn 20200 studentposter av størrelse 
 
 ---
 
-## Exercise 12 — D2024_K Problem 1: B+-tree (10 %)
+## D2024_K Problem 1: B+-tree (10 %)
 
 Vi har et B+-tre med datablokker av størrelse 4096 byte (4KB). I dette treet setter vi inn fem poster med nøkler i følgende rekkefølge: 123, 97, 128, 45, 27. Hver post har størrelse 1000 byte.
 Vis hele treet med nøklene i riktig sorteringsrekkefølge etter at alle posten er satt inn. Ta med alle pekere som skal være med.
@@ -239,7 +239,7 @@ Tegn på ark.
 
 ---
 
-## Exercise 13 — D2024_K Problem 3a: Access paths / query processing (16 % total)
+## D2024_K Problem 3a: Access paths / query processing (16 % total)
 
 Vi har en tabell med studentposter, **Student (studnr, navn, epost, studieprogram)**, som er 100 byte store. Nøkkelen **studnr** er 4 byte stor. Postene er lagret i et clustered B+-tre med blokker som er 4096 byte store. En BlockId er 8 byte. Tabellen inneholder 40 000 poster.
 I tillegg til dette har vi et unclustered B+-tre på **epost** for denne tabellen. Epostattributtet er 25 byte stort. Epost er et unikt attributt. Blokkene i dette B+-treet er også 4096 byte (4KB) store. Anta at blokker i B+-trær har fyllgrad på 2/3.
@@ -252,7 +252,7 @@ a) Hvor mange blokker får vi på løvnivå (level=0) i det clustered B+-treet?
 
 ---
 
-## Exercise 14 — D2024_K Problem 3b: Access paths / query processing (16 % total)
+## D2024_K Problem 3b: Access paths / query processing (16 % total)
 
 Vi har en tabell med studentposter, **Student (studnr, navn, epost, studieprogram)**, som er 100 byte store. Nøkkelen **studnr** er 4 byte stor. Postene er lagret i et clustered B+-tre med blokker som er 4096 byte store. En BlockId er 8 byte. Tabellen inneholder 40 000 poster.
 I tillegg til dette har vi et unclustered B+-tre på **epost** for denne tabellen. Epostattributtet er 25 byte stort. Epost er et unikt attributt. Blokkene i dette B+-treet er også 4096 byte (4KB) store. Anta at blokker i B+-trær har fyllgrad på 2/3.

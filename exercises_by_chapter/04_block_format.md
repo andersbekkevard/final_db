@@ -9,7 +9,7 @@
 
 ---
 
-## Exercise 1 — D2024_K Problem 2: Block layout (10 %)
+## D2024_K Problem 2: Block layout (10 %)
 
 Se på datablokka nede til venstre i Problem 1 og tegn opp denne med blokklayout. Vi ønsker at du bruker den layouten som har en pekervektor på slutten av datablokka, og postene på starten av blokka. Kun en av blokkene skal altså tegnes opp.
 

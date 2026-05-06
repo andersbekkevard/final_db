@@ -9,7 +9,7 @@
 
 ---
 
-## Exercise 1 — D2019 Problem 18: Unikhet og indekser (5 %)
+## D2019 Problem 18: Unikhet og indekser (5 %)
 
 Vi har en tabell
 

@@ -9,7 +9,7 @@
 
 ---
 
-## Exercise 1 — D2021 Problem 10: Access methods (3 %)
+## D2021 Problem 10: Access methods (3 %)
 
 Føresett vi har følgjande nøklar som skal settast inn i ein statisk hash-struktur:
 
@@ -28,7 +28,7 @@ Hash-strukturen er tom fra før og har 4 blokker der kvar blokk kan innehalde to
 
 ---
 
-## Exercise 2 — D2023_K Problem 4: Aksessmetoder (3%)
+## D2023_K Problem 4: Aksessmetoder (3%)
 
 Anta vi har følgende nøkler som skal settes inn i en statisk hash-struktur:
 

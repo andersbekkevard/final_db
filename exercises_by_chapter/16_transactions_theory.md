@@ -10,7 +10,7 @@
 
 ---
 
-## Exercise 1 — D2018 Problem 7 (5 %)
+## D2018 Problem 7 (5 %)
 
 Avgjør recoveryegenskapene (ikke gjenopprettbar, gjenopprettbar, ACA og strikt) ved de følgende historiene:
 
@@ -26,7 +26,7 @@ Begrunn svarene dine.
 
 ---
 
-## Exercise 2 — D2019_K Problem 16 (5 %)
+## D2019_K Problem 16 (5 %)
 
 Hvilken recoveryegenskaper (unrecoverable, recoverable, ACA and strict) har de følgende historiene? Begrunn svarene ditt.
 
@@ -42,7 +42,7 @@ Skriv ditt svar her...
 
 ---
 
-## Exercise 3 — D2021 Problem 1: Miscellaneous (3 %)
+## D2021 Problem 1: Miscellaneous (3 %)
 
 Kva er recovery-eigenskapen til følgjande historie: `r1(A); w2(A); w1(A); r3(A); c1; c2; c3;`
 
@@ -57,7 +57,7 @@ Kva er recovery-eigenskapen til følgjande historie: `r1(A); w2(A); w1(A); r3(A)
 
 ---
 
-## Exercise 4 — D2021 Problem 2: Miscellaneous (3 %)
+## D2021 Problem 2: Miscellaneous (3 %)
 
 Kva er recovery-eigenskapen til følgjande historie: `w1(A); w1(B); w2(A); c1; r2(B); r3(B); c2; c3;`
 
@@ -72,7 +72,7 @@ Kva er recovery-eigenskapen til følgjande historie: `w1(A); w1(B); w2(A); c1; r
 
 ---
 
-## Exercise 5 — D2021 Problem 4: Miscellaneous (3 %)
+## D2021 Problem 4: Miscellaneous (3 %)
 
 Kva er recovery-eigenskapen til følgjande historie: `w1(A); r2(A); w1(B); w2(B); c1; c2;`
 
@@ -87,7 +87,7 @@ Kva er recovery-eigenskapen til følgjande historie: `w1(A); r2(A); w1(B); w2(B)
 
 ---
 
-## Exercise 6 — D2021 Problem 15: Serializability (6 %)
+## D2021 Problem 15: Serializability (6 %)
 
 Kva for historier er konfliktserialiserbare?
 
@@ -104,7 +104,7 @@ Kva for historier er konfliktserialiserbare?
 
 ---
 
-## Exercise 7 — D2022 Problem 7: Konfliktserialbarhet (6 %)
+## D2022 Problem 7: Konfliktserialbarhet (6 %)
 
 Hvilke historier er konfliktserialiserbare? Det kan være flere.
 
@@ -123,7 +123,7 @@ I denne oppgaven får du poeng for hvert riktige svar og trekk for hvert feil sv
 
 ---
 
-## Exercise 8 — D2022 Problem 8: Gjenopprettbarhet (6 %)
+## D2022 Problem 8: Gjenopprettbarhet (6 %)
 
 Hvilke historier er gjenopprettbare?
 
@@ -142,7 +142,7 @@ I denne oppgaven får du poeng for hvert riktige svar og trekk for hvert feil sv
 
 ---
 
-## Exercise 9 — D2023_K Problem 7: Gjenopprettbarhet (3 %)
+## D2023_K Problem 7: Gjenopprettbarhet (3 %)
 
 Hva er recovery-egenskapen til følgende historie: w1(A); r2(A); w1(B); w2(B); c1; c2;
 
@@ -157,7 +157,7 @@ Hva er recovery-egenskapen til følgende historie: w1(A); r2(A); w1(B); w2(B); c
 
 ---
 
-## Exercise 10 — D2023_K Problem 8: Gjenopprettbarhet (3 %)
+## D2023_K Problem 8: Gjenopprettbarhet (3 %)
 
 Hva er recovery-egenskapen til følgende historie: w1(A); w1(B); w2(A); c1; r2(B); r3(B); c2; c3;
 
@@ -172,7 +172,7 @@ Hva er recovery-egenskapen til følgende historie: w1(A); w1(B); w2(A); c1; r2(B
 
 ---
 
-## Exercise 11 — D2023_K Problem 9: Gjenopprettbarhet (3 %)
+## D2023_K Problem 9: Gjenopprettbarhet (3 %)
 
 Hva er recovery-egenskapen til følgende historie: r1(A); w2(A); w1(A); r3(A); c1; c2; c3;
 
@@ -187,7 +187,7 @@ Hva er recovery-egenskapen til følgende historie: r1(A); w2(A); w1(A); r3(A); c
 
 ---
 
-## Exercise 12 — D2023_K Problem 10: Konfliktserialiserbarhet ( 6 %)
+## D2023_K Problem 10: Konfliktserialiserbarhet ( 6 %)
 
 Hvilke historier (schedules) er konfliktserialiserbare?
 
@@ -205,7 +205,7 @@ Hvilke historier (schedules) er konfliktserialiserbare?
 
 ---
 
-## Exercise 13 — D2024 Problem 9: Conflict serializability (6 %)
+## D2024 Problem 9: Conflict serializability (6 %)
 
 Hvilke av de følgende historiene (schedules) er konfliktserialiserbare?
 
@@ -221,7 +221,7 @@ Hvilke av de følgende historiene (schedules) er konfliktserialiserbare?
 
 ---
 
-## Exercise 14 — D2025 Problem 6: Conflict serializability (6 %)
+## D2025 Problem 6: Conflict serializability (6 %)
 
 Hvilke av de følgende historiene er konliktserialiserbare?
 
@@ -238,7 +238,7 @@ Hvilke av de følgende historiene er konliktserialiserbare?
 
 ---
 
-## Exercise 15 — D2024_K Problem 4: Recovery properties (3 %)
+## D2024_K Problem 4: Recovery properties (3 %)
 
 Gitt følgende historier:
 
@@ -256,7 +256,7 @@ Klassifiser disse historiene med sine mest spesifikke recoveryegenskaper.
 
 ---
 
-## Exercise 16 — D2024_K Problem 5: Conflict serializability (4 %)
+## D2024_K Problem 5: Conflict serializability (4 %)
 
 Hvilke av de følgende historiene er konfliktserialiserbare?
 

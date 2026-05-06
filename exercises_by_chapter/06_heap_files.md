@@ -9,7 +9,7 @@
 
 ---
 
-## Exercise 1 — D2023 Problem 7: Heapfile (6 %)
+## D2023 Problem 7: Heapfile (6 %)
 
 Vi har poster som er 100 bytes store. Vi har en tabell med 10 000 poster. Hvor mange blokker har vi i en heapfil når blokkene er 4096 bytes store? Anta det kun lagres hele poster i blokkene.
 

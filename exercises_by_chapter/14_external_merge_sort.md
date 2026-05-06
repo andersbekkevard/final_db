@@ -9,7 +9,7 @@
 
 ---
 
-## Exercise 1 — D2023 Problem 11: Sorting (7 %)
+## D2023 Problem 11: Sorting (7 %)
 
 Vi har en usortert fil bestående av 512 blokker med poster og et buffer ned plass til 5 blokker. Hvor mange blokker leses og skrives til sammen når postene skal sorteres ved hjelp av flettesortering? En lesing og en skriving av en blokk blir til sammen 2.
 

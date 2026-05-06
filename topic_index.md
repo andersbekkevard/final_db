@@ -16,7 +16,7 @@ Includes: design from prose, ER critique, ER → relational mapping, instance / 
 - D2018 Problem 4 — find errors in Course/Student/ExercisePackage ER.
 - D2018_K Problem 1 — Lotto-game ER.
 - D2018_K Problem 2 — Photo/Photographer EER (with category) → relations.
-- D2018_K Problem 3 — currency-rates relational schema → ER.
+- D2018_K Problem 3a — currency-rates relational schema → ER.
 - D2019 Problem 1 — study-program / course / LUB ER.
 - D2019 Problem 6 — athletics EER (Throw/Jump/Run subtypes) → relations.
 - D2019 Problem 11 — when are EER categories appropriate.
@@ -43,9 +43,9 @@ Includes: `SELECT` with joins / aggregation / `NOT EXISTS` / sub-queries / order
 - D2018 Problem 2b — `SELECT` genres containing 'fantasy'.
 - D2018 Problem 2c — `SELECT` count of books per publisher.
 - D2018 Problem 2d — `INSERT` Kim Leine.
-- D2018_K Problem 4 — countries using Euro.
-- D2018_K Problem 5 — min/max/avg currency rate per code in 2017.
-- D2018_K Problem 7 — months where SEK > NOK every day.
+- D2018_K Problem 3b — countries using Euro.
+- D2018_K Problem 3c — min/max/avg currency rate per code in 2017.
+- D2018_K Problem 3e — months where SEK > NOK every day.
 - D2019 Problem 3 — count exam results per year for TDT4145.
 - D2019 Problem 4 — courses with exam but no A grade.
 - D2019 Problem 5 — `CREATE TABLE ExamResults` with PK/FK and CHECK.
@@ -66,7 +66,7 @@ Includes: `SELECT` with joins / aggregation / `NOT EXISTS` / sub-queries / order
 Includes: write an RA expression / tree, read a given RA expression and explain it, fill blanks in an RA query.
 
 - D2018 Problem 2e — co-authors of Linn Ullmann.
-- D2018_K Problem 6 — explain information need of given RA query.
+- D2018_K Problem 3d — explain information need of given RA query.
 - D2019 Problem 2 — students with grade A in TDT4145.
 - D2019_K Problem 4 — persons allocated to NTNU-Campus.
 - D2020 Problem 3 — fill in 6 boxes (A–F) of RA query (Corona DB).
@@ -83,9 +83,9 @@ Includes: derive FDs (Armstrong), compute attribute closure `X+`, find candidate
 - D2018 Problem 3a — FD reasoning on long-jump table (Wind→Attempt).
 - D2018 Problem 3b — construct R(A,B,C,D) instance violating CD→A and B→D.
 - D2018 Problem 3c — Armstrong: derive WX→Z from WY→Z, X→Y.
-- D2018_K Problem 8 — find X,Y,Z values consistent with A→B; BC→D; D→A.
-- D2018_K Problem 9 — define candidate key, find all candidate keys.
-- D2018_K Problem 11 — define attribute closure X+ and give algorithm.
+- D2018_K Problem 4a — find X,Y,Z values consistent with A→B; BC→D; D→A.
+- D2018_K Problem 4b — define candidate key, find all candidate keys.
+- D2018_K Problem 4d — define attribute closure X+ and give algorithm.
 - D2019 Problem 9 — FDs on schema / explain reasoning.
 - D2019_K Problem 8 — all superkeys of R given F={A→B; C→D}.
 - D2020 Problem 8 — max rows in R(A..E) over int 1–10; primary key.
@@ -100,7 +100,7 @@ Includes: derive FDs (Armstrong), compute attribute closure `X+`, find candidate
 
 Includes: state the highest NF (1NF/2NF/3NF/BCNF/4NF) the schema satisfies and justify; conceptual NF questions.
 
-- D2018_K Problem 10 — highest NF of R given F.
+- D2018_K Problem 4c — highest NF of R given F.
 - D2019 Problem 10 — drawbacks when not in BCNF (three classes).
 - D2019_K Problem 9 — define 3NF.
 - D2019_K Problem 11 — when not to normalize fully; example.

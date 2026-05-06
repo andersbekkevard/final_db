@@ -64,7 +64,7 @@ each table choice. The reverse direction (relational → ER) is filed here too.
 *Example:* D2019 #6 — convert athletics-results EER with disjoint
 specialization (Throw/Jump/Run) into tables.
 
-Members: D2018 #2a, D2018_K #2, D2018_K #3, D2019 #6, D2019_K #3, D2020 #2,
+Members: D2018 #2a, D2018_K #2, D2018_K #3a, D2019 #6, D2019_K #3, D2020 #2,
 D2023 #5, D2024_K #13.
 
 ### 3. ER critique — 2
@@ -81,7 +81,7 @@ aggregation, `NOT EXISTS`, sub-queries, ordering.
 *Example:* D2020 #5 — find the dates with zero hospitalizations in
 Trondheim using `NOT EXISTS`.
 
-Members: D2018 #2b, D2018 #2c, D2018_K #4, D2018_K #5, D2018_K #7, D2019 #3,
+Members: D2018 #2b, D2018 #2c, D2018_K #3b, D2018_K #3c, D2018_K #3e, D2019 #3,
 D2019 #4, D2019_K #5, D2019_K #6, D2020 #4, D2020 #5, D2024 #11, D2024_K #10.
 
 ### 5. SQL DML / DDL — 4
@@ -98,7 +98,7 @@ RA expression and explain it / verify equivalence with SQL.
 *Example:* D2025 #13 — RA graph for "cities in Nordland with ≥10 000
 inhabitants, sorted descending by population".
 
-Members: D2018 #2e, D2018_K #6, D2019 #2, D2019_K #4, D2020 #3, D2023 #4,
+Members: D2018 #2e, D2018_K #3d, D2019 #2, D2019_K #4, D2020 #3, D2023 #4,
 D2024 #10, D2024_K #9, D2025 #13.
 
 ### 7. Functional dependencies & keys — 12
@@ -108,7 +108,7 @@ infer missing tuple values from F, or upper-bound the number of legal
 tuples.
 *Example:* D2018 #3c — prove `WX → Z` from `WY → Z` and `X → Y`.
 
-Members: D2018 #3a, D2018 #3b, D2018 #3c, D2018_K #8, D2018_K #9, D2018_K #11,
+Members: D2018 #3a, D2018 #3b, D2018 #3c, D2018_K #4a, D2018_K #4b, D2018_K #4d,
 D2019_K #8, D2020 #8, D2020 #9, D2023 #1, D2024 #12, D2024_K #12.
 
 ### 8. Normal-form determination — 5
@@ -118,7 +118,7 @@ Given a schema and its FDs (or MVDs for 4NF), state the highest normal form
 Continent)` with `CountryCode → CountryName; CountryName → CountryCode,
 Population, Continent`: highest NF?
 
-Members: D2018_K #10, D2020 #10, D2023 #2, D2024 #13, D2025 #11.
+Members: D2018_K #4c, D2020 #10, D2023 #2, D2024 #13, D2025 #11.
 
 ### 9. Normalization decomposition — 3
 Decompose a non-BCNF schema into BCNF (or 3NF) sub-tables and prove the
@@ -148,7 +148,7 @@ compute the number of blocks at level 0 / level 1 / etc.
 *Example:* D2025 #1 — clustered B+-tree, 20 200 records of 120 B, 4 KB
 blocks, 2/3 fill: how many leaf blocks?
 
-Members: D2018 #5, D2018_K #13, D2019_K #12, D2020 #12, D2021 #6, D2022 #1,
+Members: D2018 #5, D2018_K #6a, D2019_K #12, D2020 #12, D2021 #6, D2022 #1,
 D2023 #8, D2023_K #2, D2024 #1, D2024_K #1, D2024_K #3a, D2024_K #3b,
 D2025 #1, D2025 #2.
 
@@ -158,7 +158,7 @@ splits) or compute block-access cost on a static-hash file (with overflow).
 *Example:* D2020 #11 — given an extendible-hash directory, identify the
 first block that must split and the resulting local depths.
 
-Members: D2018_K #12, D2019 #13, D2019_K #13, D2020 #11, D2021 #5,
+Members: D2018_K #5, D2019 #13, D2019_K #13, D2020 #11, D2021 #5,
 D2021 #9, D2021 #10, D2022 #2, D2023 #9, D2023_K #4, D2023_K #5, D2024 #2.
 
 ### 13. Index access paths / query block-cost — 24
@@ -168,8 +168,8 @@ a specific SQL query under "optimal execution". Single biggest category.
 *Example:* D2025 #4 — optimal block count for
 `SELECT ForNavn FROM Ansatt WHERE EtterNavn='Johannessen'`.
 
-Members: D2018 #6a, D2018 #6b, D2018 #6c, D2018 #6d, D2018_K #14,
-D2018_K #15, D2019 #14, D2019 #15, D2019 #16, D2019 #17, D2019 #18,
+Members: D2018 #6a, D2018 #6b, D2018 #6c, D2018 #6d, D2018_K #6b,
+D2018_K #6c, D2019 #14, D2019 #15, D2019 #16, D2019 #17, D2019 #18,
 D2020 #13, D2021 #8, D2022 #9, D2023 #12, D2023 #13, D2023 #14,
 D2023_K #3, D2024 #8, D2024_K #3c, D2024_K #3d, D2025 #3, D2025 #4, D2025 #5.
 
@@ -178,7 +178,7 @@ Given two relations of stated block size and a buffer of B blocks, compute
 I/O cost of a join — almost always block-nested-loop.
 *Example:* D2022 #11 — block-NL-join with an 8-block buffer.
 
-Members: D2018_K #16, D2021 #12, D2022 #11, D2023 #10.
+Members: D2018_K #7, D2021 #12, D2022 #11, D2023 #10.
 
 ### 15. External sorting — 1
 External merge-sort I/O accounting given record count and buffer size.
@@ -218,7 +218,7 @@ Three sub-flavours, all filed here:
 `r1(X); r2(X); w1(X); r3(Y); c1; w2(Y); c2; r3(Z); c3;`, what is the
 commit order under rigorous 2PL?
 
-Members: D2018 #8, D2018_K #18, D2019 #19, D2019 #20, D2020 #15, D2021 #3,
+Members: D2018 #8, D2018_K #8b, D2019 #19, D2019 #20, D2020 #15, D2021 #3,
 D2021 #11, D2022 #6, D2023 #15, D2023 #16, D2024 #3, D2024_K #6, D2025 #9,
 D2025 #10.
 
@@ -263,7 +263,7 @@ no-steal, checkpoint contents, why redo starts at the oldest recLSN, etc.
 *Example:* D2022 #3 — pick the correct statements about WAL and the
 steal/force policy.
 
-Members: D2018_K #19, D2018_K #20, D2019_K #17, D2022 #3, D2022 #5,
+Members: D2018_K #9a, D2018_K #9b, D2019_K #17, D2022 #3, D2022 #5,
 D2024_K #8.
 
 ### 25. Conceptual / theory short-answer — 11
@@ -275,7 +275,7 @@ WAL / MVCC / catalog. Distinguished from category 24 in that the topic is
 *Example:* D2019_K #15 — explain atomicity, consistency, isolation,
 durability.
 
-Members: D2018_K #17, D2019 #7, D2019 #8, D2019 #10, D2019 #11,
+Members: D2018_K #8a, D2019 #7, D2019 #8, D2019 #10, D2019 #11,
 D2019_K #1, D2019_K #9, D2019_K #11, D2019_K #14, D2019_K #15, D2021 #13.
 
 ### 26. Comment placeholder (0 pts) — 7

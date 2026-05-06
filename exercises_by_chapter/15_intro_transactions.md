@@ -10,7 +10,7 @@
 
 ---
 
-## Exercise 1 — D2018_K Problem 17: Transaksjoner - a (5 %)
+## D2018_K Problem 8a: Transaksjoner (5 %)
 
 En viktig del av transaksjonenes ACID-egenskaper er C, dvs. konsistens. Forklar hva som ligger i dette begrepet.
 
@@ -20,7 +20,7 @@ En viktig del av transaksjonenes ACID-egenskaper er C, dvs. konsistens. Forklar 
 
 ---
 
-## Exercise 2 — D2019_K Problem 15 (5 %)
+## D2019_K Problem 15 (5 %)
 
 Forklar de 4 egenskapene for transaksjoner som ligger bak begrepet ACID.
 
@@ -30,7 +30,7 @@ Skriv ditt svar her...
 
 ---
 
-## Exercise 3 — D2020 Problem 14 (2 %)
+## D2020 Problem 14 (2 %)
 
 Hvilket isolasjonsnivå for transaksjoner må vi bruke hvis vi ønsker å unngå at en annen transaksjon setter inn poster mellom de postene som en transaksjon ønsker å scanne og lese? Begrunn svaret ditt.
 

@@ -29,7 +29,7 @@ Anta følgende logg blir funnet etter en krasj:
 
 Anta at Dirty Page Table (DPT) og transaksjonstabellen (TT) i sjekkpunktloggposten med LSN 237 (End_ckpt) er tomme.
 
-## Exercise 1 — D2018 Problem 9a (5 %)
+## D2018 Problem 9a (5 %)
 
 Hvordan ser DPT og TT ut etter at analysen i Recovery er ferdig? DPT har feltene PageId og RecoveryLSN. TT har feltene TransactionID, LastLSN og TransactionStatus.
 
@@ -37,7 +37,7 @@ Hvordan ser DPT og TT ut etter at analysen i Recovery er ferdig? DPT har feltene
 
 ---
 
-## Exercise 2 — D2018 Problem 9b (5 %)
+## D2018 Problem 9b (5 %)
 
 Hva skjer under undofasen av recovery? Hvilke transaksjoner rulles tilbake og hvilke nye loggposter lages?
 
@@ -45,7 +45,7 @@ Hva skjer under undofasen av recovery? Hvilke transaksjoner rulles tilbake og hv
 
 ---
 
-## Exercise 3 — D2018_K Problem 19: Transaksjoner: Recovery - ARIES - a (5 %)
+## D2018_K Problem 9a: Transaksjoner: Recovery - ARIES (5 %)
 
 Hvilken informasjon finnes i sjekkpunktloggposter i ARIES og hva brukes informasjonen til?
 
@@ -55,7 +55,7 @@ Hvilken informasjon finnes i sjekkpunktloggposter i ARIES og hva brukes informas
 
 ---
 
-## Exercise 4 — D2018_K Problem 20: Transaksjoner: Recovery - ARIES - b (5 %)
+## D2018_K Problem 9b: Transaksjoner: Recovery - ARIES (5 %)
 
 I hvilke situasjoner må datablokker (pages) skrives i ARIES?
 
@@ -96,7 +96,7 @@ Følgende Dirty Page Table (DPT) ble funnet i loggpost med LSN 14:
 | A      | 10     |
 | B      | 11     |
 
-## Exercise 5 — D2019 Problem 21: ARIES analyse (5 %)
+## D2019 Problem 21: ARIES analyse (5 %)
 
 Vis hvordan DPT og transaksjonstabellen ser ut etter at analysen er ferdig.
 
@@ -104,7 +104,7 @@ Vis hvordan DPT og transaksjonstabellen ser ut etter at analysen er ferdig.
 
 ---
 
-## Exercise 6 — D2019 Problem 22: ARIES redo (5 %)
+## D2019 Problem 22: ARIES redo (5 %)
 
 For hver update-loggpost i loggen forklar om det blir gjort redo eller ikke. Forklar også hvorfor / hvorfor ikke det blir gjort redo når de forskjellige blokkene (PageId) har følgende PageLSN:
 
@@ -118,7 +118,7 @@ For hver update-loggpost i loggen forklar om det blir gjort redo eller ikke. For
 
 ---
 
-## Exercise 7 — D2019_K Problem 14 (5 %)
+## D2019_K Problem 14 (5 %)
 
 Hvorfor trenger vi recovery i databasesystemer?
 
@@ -128,7 +128,7 @@ Skriv ditt svar her...
 
 ---
 
-## Exercise 8 — D2019_K Problem 17 (5 %)
+## D2019_K Problem 17 (5 %)
 
 Forklar hvorfor det ved recovery i ARIES er slik at REDO-recovery må starte ved eldste RecoveryLSN i Dirty Page Table som ble funnet i siste sjekkpunkt i loggen.
 
@@ -157,7 +157,7 @@ Anta at DPT og Transaksjonstabellen er tomme i sjekkpunktloggposten med LSN 106 
 
 Loggpostene for update har formatet (LSN, Transaction, PrevLSN, Operation, Page, befImage, aftImage). Hvis det er den første loggede operasjonen for en transaksjon, vil PrevLSN være NIL. For Commit og Abort er formatet (LSN, Transaction, PrevLSN, Operation).
 
-## Exercise 9 — D2020 Problem 16 (5 %)
+## D2020 Problem 16 (5 %)
 
 Skriv opp innholdet av Dirty Page Table (DPT) og Transaksjonstabellen etter at analysen har kjørt seg ferdig. Du skal ikke tegne disse, bare skriv de som tekst.
 
@@ -165,7 +165,7 @@ Skriv opp innholdet av Dirty Page Table (DPT) og Transaksjonstabellen etter at a
 
 ---
 
-## Exercise 10 — D2020 Problem 17 (5 %)
+## D2020 Problem 17 (5 %)
 
 Anta ARIES-recovery er gjort for loggen i oppgave 16.
 
@@ -179,7 +179,7 @@ Husk å begrunne og å svare på begge spørsmål.
 
 ---
 
-## Exercise 11 — D2021 Problem 7: Recovery (ARIES) (6 %)
+## D2021 Problem 7: Recovery (ARIES) (6 %)
 
 Følgjande logg blei funne etter eit krasj med ARIES-type logging og recovery:
 
@@ -211,7 +211,7 @@ Føresett end_ckpt med LSN 103 har ein Dirty Page Table (DPT) som inneheld (B, 1
 
 ---
 
-## Exercise 12 — D2021 Problem 13: Miscellaneous (6 %)
+## D2021 Problem 13: Miscellaneous (6 %)
 
 Kva for utsegn er sanne?
 
@@ -228,7 +228,7 @@ Kva for utsegn er sanne?
 
 ---
 
-## Exercise 13 — D2021 Problem 14: Miscellaneous (3 %)
+## D2021 Problem 14: Miscellaneous (3 %)
 
 Følgjande logg blei funne etter eit krasj med ARIES-type logging og recovery:
 
@@ -263,7 +263,7 @@ Føresett end_ckpt med LSN 104 har ein Dirty Page Table (DPT) som inneheld (B, 1
 
 ---
 
-## Exercise 14 — D2022 Problem 3: Misc (6 %)
+## D2022 Problem 3: Misc (6 %)
 
 Hva er riktig for ARIES?
 
@@ -282,7 +282,7 @@ I denne oppgaven får du poeng for hvert riktige svar og trekk for hvert feil sv
 
 ---
 
-## Exercise 15 — D2022 Problem 5: Misc (6 %)
+## D2022 Problem 5: Misc (6 %)
 
 Hvilke alternativ er sanne?
 
@@ -301,7 +301,7 @@ I denne oppgaven får du poeng for hvert riktige svar og trekk for hvert feil sv
 
 ---
 
-## Exercise 16 — D2022 Problem 10: ARIES (4 %)
+## D2022 Problem 10: ARIES (4 %)
 
 | LSN | PrevLSN | TransID | Type     | PageID |
 | --- | ------- | ------- | -------- | ------ |
@@ -346,7 +346,7 @@ Vi har en logg som ser ut som følger etter en krasj.
 | 107 | 102     | T1            | Update     | B      |
 | 108 | 0       | T3            | Update     | C      |
 
-## Exercise 17 — D2023 Problem 17: Recovery REDO (7 %)
+## D2023 Problem 17: Recovery REDO (7 %)
 
 Og en DPT som ser ut som følger i loggpost 104 (Ckpt_end):
 
@@ -375,7 +375,7 @@ Hvilke loggposter blir det gjort REDO på (LSN er oppgitt i alternativene)?
 
 ---
 
-## Exercise 18 — D2023 Problem 18: Recovery UNDO (6 %)
+## D2023 Problem 18: Recovery UNDO (6 %)
 
 Vi har en logg som ser ut som følger etter en krasj. Hvilke loggposter vil genereres under undo?
 
@@ -405,7 +405,7 @@ Formatet på loggpostene under er `(LSN, PrevLSN, TransactionID, Operation, Page
 
 ---
 
-## Exercise 19 — D2023_K Problem 11: ARIES (10 %)
+## D2023_K Problem 11: ARIES (10 %)
 
 Anta at vi bruker ARIES-recovery og la A, B, og C være dataelementer. Etter en krasj ble følgende logg funnet med en loggpost i hver rad av tabellen:
 
@@ -442,7 +442,7 @@ Hvordan ser transaksjonstabellen og Dirty Page Table ut etter analysefasen av re
 
 ---
 
-## Exercise 20 — D2023_K Problem 12: ARIES (10 %)
+## D2023_K Problem 12: ARIES (10 %)
 
 Anta at vi bruker ARIES-recovery og la A og C være dataelementer. Etter en krasj ble følgende logg funnet med en loggpost i hver rad av tabellen:
 
@@ -481,7 +481,7 @@ Under redofasen trenger datablokk A redo av loggpost 106, mens datablokk C treng
 | 110 | 0       | T3            | Update     | F      |
 | 111 | 109     | T2            | Commit     |        |
 
-## Exercise 21 — D2024 Problem 5: ARIES Recovery ( 4 %)
+## D2024 Problem 5: ARIES Recovery ( 4 %)
 
 Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunktloggposten med LSN=107 ble følgende transaksjonstabell funnet **(T1, LastLSN=105, state=Active)**, **(T2, LastLSN=104, state=Active)** og følgende DPT (Dirty Page Table) ble funnet: **(PageId=B, recLSN=102)**, **(PageId=C, recLSN=104)**. Hvilke elementer er med i DPT etter at analysen er ferdig?
 
@@ -500,7 +500,7 @@ Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunkt
 
 ---
 
-## Exercise 22 — D2024 Problem 6: ARIES Recovery (4 %)
+## D2024 Problem 6: ARIES Recovery (4 %)
 
 Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunktloggposten med LSN=107 ble følgende transaksjonstabell funnet **(T1, LastLSN=105, state=Active)**, **(T2, LastLSN=104, state=Active)** og følgende DPT (Dirty Page Table) ble funnet: **(PageId=B, recLSN=102)**, **(PageId=C, recLSN=104)**. Hvilke loggposter genereres under undo-fasen av recovery? CLR betyr Compensating Log Record.
 
@@ -517,7 +517,7 @@ Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunkt
 
 ---
 
-## Exercise 23 — D2024 Problem 7: ARIES Recovery (6 %)
+## D2024 Problem 7: ARIES Recovery (6 %)
 
 Følgende logg ble funnet etter en krasj. Vi bruker ARIES recovery. I sjekkpunktloggposten med LSN=107 ble følgende transaksjonstabell funnet **(T1, LastLSN=105, state=Active)**, **(T2, LastLSN=104, state=Active)** og følgende DPT (Dirty Page Table) ble funnet: **(PageId=B, recLSN=102)**, **(PageId=C, recLSN=104)**. Hvilke datablokker (pages) kan vi med sikkerhet si ble skrevet ut til disken før krasjet i dette tilfellet?
 
@@ -551,7 +551,7 @@ Følgende logg ble funnet etter en krasj. Vi bruker ARIES recovery. I sjekkpunkt
 | 110 | 0       | T3            | Update     | E      |
 | 111 | 109     | T2            | Commit     |        |
 
-## Exercise 24 — D2025 Problem 7: ARIES (8 %)
+## D2025 Problem 7: ARIES (8 %)
 
 Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunktloggposten med LSN=107 ble følgende transaksjonstabell funnet **(T1, LastLSN=105, state=Active)**, **(T2, LastLSN=104, state=Active)** og følgende DPT (Dirty Page Table) ble funnet: **(PageId=A, recLSN=102)**, **(PageId=B, recLSN=103)**. Hvilke elementer er med i DPT etter at analysen er ferdig?
 
@@ -571,7 +571,7 @@ Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunkt
 
 ---
 
-## Exercise 25 — D2025 Problem 8: ARIES (8 %)
+## D2025 Problem 8: ARIES (8 %)
 
 Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunktloggposten med LSN=107 ble følgende transaksjonstabell funnet **(T1, LastLSN=105, state=Active)**, **(T2, LastLSN=104, state=Active)** og følgende DPT (Dirty Page Table) ble funnet: **(PageId=A, recLSN=102)**, **(PageID=C, recLSN=105)**. I tillegg vet vi at ved kjøring av loggpost med LSN=105, ble plassen til PageID=B "stjålet" fra bufferet. Ut i fra dette og loggen over, hvilke datablokker (Pages) kan vi med sikkerhet si ble skrevet ut før krasjen?
 
@@ -588,7 +588,7 @@ Følgende logg ble funnet etter et krasj. Vi bruker ARIES recovery. I sjekkpunkt
 
 ---
 
-## Exercise 26 — D2024_K Problem 7: ARIES (5 %)
+## D2024_K Problem 7: ARIES (5 %)
 
 Anta ARIES-recovery og la B, C og D være dataelementer og T1, T2 og T3 være transaksjoner. Loggpostene i loggen under har loggposter på formatet:
 [LSN,Operation,Transaction,DataItem]
@@ -617,7 +617,7 @@ For hver update-loggpost i denne loggen forklar hvorfor (eller hvorfor ikke) det
 
 ---
 
-## Exercise 27 — D2024_K Problem 8: ARIES (5 %)
+## D2024_K Problem 8: ARIES (5 %)
 
 Forklar hvorfor redo må gjøres før undo når det er krasjrecovery i ARIES. Bruk gjerne eksempelet i forrige oppgave til å forklare.
 
